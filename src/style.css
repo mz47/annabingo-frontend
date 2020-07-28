@@ -1,0 +1,35 @@
+.bingofield {
+  background-color: #61dafb;
+  max-width: 10em;
+  width: 10em;
+  max-height: 8em;
+  height: 8em;
+  margin: 1em;
+  border-radius: 20px;
+  padding-top: 0.5em;
+  text-align: center !important;
+  cursor: pointer;
+}
+
+.activefield {
+  background-color: crimson !important;
+}
+
+.header {
+  padding-left: 2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: aquamarine;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.bingolink {
+  margin-left: 1em;
+}
+
+.displaynone {
+  display: none;
+}
