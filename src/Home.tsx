@@ -7,9 +7,9 @@ export const Home = () => {
         <Container className="text-center">
             <h1 className="mt-5">Annabingo Annabongo</h1>
             <div>
-                Click on <Link to="/create">Create</Link> to create a new Annabingo field with your own questions.<br/>
-                After submitting your field, a link is generated to be shared with your friends.<br/>
-                Enjoy playing Annabingo!
+                Klicke auf <Link to="/create">Create</Link> um ein neues Annabingo anzulegen mit deinen eigenen Aussagen.<br/>
+                Nach dem erfolgreichen Anlegen, wird ein Link generiert den du mit deinen Freunden teilen kannst.<br/>
+                Enjoy Annabingo!
                 <div><img className="mt-5" src="bingo-image-unsplash.jpg" alt="Annabingo Splash Image"/></div>
             </div>
         </Container>
