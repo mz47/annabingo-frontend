@@ -11,7 +11,7 @@ export const Home = () => {
                 Klicke auf <Link to="/create">Create</Link> um ein neues Annabingo anzulegen mit deinen eigenen Aussagen.<br/>
                 Nach dem erfolgreichen Anlegen, wird ein Link generiert den du mit deinen Freunden teilen kannst.<br/>
                 Enjoy Annabingo!
-                <div><img className="mt-5" src={bingo} alt="Annabingo Splash Image"/></div>
+                <div><img className="img-fluid mt-5" src={bingo} alt="Annabingo Splash Image"/></div>
             </div>
         </Container>
     )

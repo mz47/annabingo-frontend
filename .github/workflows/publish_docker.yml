@@ -12,3 +12,14 @@ jobs:
         run: docker build . --file Dockerfile --tag mz47/annabingo-frontend:latest
       - name: Push the tagged Docker image
         run: docker push mz47/annabingo-frontend:latest
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to annabingo.de
+        uses: appleboy/ssh-action@master
+        env:
+          USERNAME: root
+          HOST: 95.216.209.158
+          SCRIPT: docker-compose -f compose/annabingo.yaml pull && docker-compose -f compose/annabingo.yaml up -d --force-recreate
+          KEY: ${{ secrets.SSH_KEY }}
