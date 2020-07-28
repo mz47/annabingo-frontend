@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Col, Container, FormControl, InputGroup, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import {CreateField} from "./CreateField";
 import {Link} from "react-router-dom";
 
@@ -52,8 +52,8 @@ export const CreateMatrix = () => {
             </Row>
             <Row>
                 <div className="ml-auto mr-auto">
-                    <Button onClick={postMatrix}>Create Bingo!</Button>
-                    <Link className={`bingolink ${url.length == 0 ? "displaynone" : ""}`} to={`/view/${uuid}`}>Open Annabingo</Link>
+                    <Button onClick={postMatrix}>Create Annabingo!</Button>
+                    <Link className={`bingolink ${url.length === 0 ? "displaynone" : ""}`} to={`/view/${uuid}`}>Open Annabingo</Link>
                 </div>
             </Row>
         </Container>

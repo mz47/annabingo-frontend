@@ -11,6 +11,6 @@ export const CreateField: FC<CreateFieldProps> = (props) => {
     const {text, onChange} = props
 
     return (
-        <Col><textarea className="bingofield" onChange={onChange} value={text}/></Col>
+        <Col><textarea className="createfield" onChange={onChange} value={text}/></Col>
     )
 }

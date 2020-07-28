@@ -16,13 +16,16 @@ export const Matrix = () => {
 
     return (
         <Container>
-            {value.map((row, i) => {
-                return <Row key={i}>
-                    {row.map((item, j) => {
-                        return <Bingofield key={`id-${i}-${j}`} text={item}/>
-                    })}
-                </Row>
-            })}
+            <div className="ml-auto mr-auto">
+                {value.map((row, i) => {
+                    return <Row key={i}>
+                        {row.map((item, j) => {
+                            return <Bingofield key={`id-${i}-${j}`} text={item}/>
+                        })}
+                    </Row>
+                })}
+            </div>
+
         </Container>
     )
 }

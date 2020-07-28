@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+a,
+a:visited,
+a:active {
+  color: #363636;
+}
+
+a:hover {
+  color: #CCA43B;
+}
+
 .bingofield {
-  background-color: #61dafb;
-  max-width: 10em;
-  width: 10em;
-  max-height: 8em;
-  height: 8em;
+  background-color: #242F40;
+  font-size: larger;
+  color: #f4f4f4;
+  width: 25vw;
+  height: 18vh;
+  margin: 1em;
+  border-radius: 20px;
+  padding-top: 0.5em;
+  text-align: center !important;
+  cursor: pointer;
+}
+.bingofield:hover {
+  background-color: #363636;
+}
+
+.createfield {
+  background-color: #242F40;
+  color: #f4f4f4;
+  width: 15vw;
+  height: 18vh;
   margin: 1em;
   border-radius: 20px;
   padding-top: 0.5em;
@@ -12,18 +43,39 @@
 }
 
 .activefield {
-  background-color: crimson !important;
+  background-color: #CCA43B !important;
+}
+.activefield:hover {
+  background-color: #CCA43B !important;
 }
 
 .header {
   padding-left: 2em;
   padding-top: .5em;
   padding-bottom: .5em;
-  background-color: aquamarine;
   text-transform: uppercase;
   width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+}
+
+.navbar-custom {
+  background-color: #363636;
+  height: 8vh;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #f4f4f4;
+  font-size: xx-large;
+}
+.navbar-custom .navbar-brand:hover {
+  color: #CCA43B;
+}
+.navbar-custom .navbar-nav .nav-link:visited,
+.navbar-custom .navbar-nav .nav-link:active,
+.navbar-custom .navbar-nav .nav-link {
+  color: #f4f4f4;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #CCA43B;
 }
 
 .bingolink {
@@ -32,4 +84,13 @@
 
 .displaynone {
   display: none;
+}
+
+.btn-primary {
+  background-color: #242F40;
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: #CCA43B;
+  border: 0;
 }
