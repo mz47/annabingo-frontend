@@ -16,7 +16,11 @@ export const Matrix = () => {
 
     return (
         <Container>
-            Aussagen werden nacheinander ausgerufen. Wenn du eine Übereinstimmung mit dir selbst erkennst, markierst du das Feld. Hast du 3 Treffer quer, hochkant oder diagonal rufst du "Annabingo". Hast du ein Annabingo, gewinnst du das Spiel.
+            <div className="text-center mt-3">
+                Aussagen werden nacheinander ausgerufen. Wenn du eine Übereinstimmung mit dir selbst erkennst, markierst du das Feld.
+                Hast du 3 Treffer quer, hochkant oder diagonal rufst du "Annabingo". <br/>
+                Hast du ein Annabingo, gewinnst du das Spiel.
+            </div>
             <div className="ml-auto mr-auto">
                 {value.map((row, i) => {
                     return <Row key={i}>
