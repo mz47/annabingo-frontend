@@ -30,6 +30,12 @@ a:hover {
   background-color: #363636;
 }
 
+.bingotitle {
+  width: 30vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .createfield {
   background-color: #242F40;
   color: #f4f4f4;
