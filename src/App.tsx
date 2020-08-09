@@ -4,6 +4,7 @@ import {Matrix} from "./Matrix";
 import {Route, Switch} from "react-router-dom";
 import {Header} from "./Header";
 import {Home} from "./Home";
+import {SearchBingo} from "./SearchBingo";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <Route exact path="/" component={Home}/>
                 <Route path="/view/:uuid" component={Matrix}/>
                 <Route path="/create" component={CreateMatrix}/>
+                <Route path="/search" component={SearchBingo}/>
             </Switch>
         </div>
     );

@@ -6,7 +6,8 @@ export const Header = () => {
         <Navbar className="navbar-custom">
             <Navbar.Brand href="#">ANNABINGO!</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#create">+ Create</Nav.Link>
+                <Nav.Link href="#create">+ Neu</Nav.Link>
+                <Nav.Link href="#search">o Suchen</Nav.Link>
             </Nav>
         </Navbar>
     )

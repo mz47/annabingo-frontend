@@ -6,15 +6,12 @@ import {Bingo} from "./Bingo";
 
 export const Matrix = () => {
   const {uuid} = useParams() as any
-  const [value, setValue] = React.useState<string[][]>([[]])
   const [bingo, setBingo] = useState<Bingo>()
 
   React.useEffect(() => {
-    console.log("uuid", uuid)
     fetch(`/api/view/${uuid}`)
       .then(response => response.json())
       .then(data => setBingo(data))
-    console.log("bingo", bingo)
   }, [uuid])
 
   return (
@@ -29,7 +26,7 @@ export const Matrix = () => {
           </Row>
         })}
       </div>
-      <div className="text-center mt-3">
+      <div className="text-center mt-3 mb-3">
         Aussagen werden nacheinander ausgerufen. Wenn du eine Übereinstimmung mit dir selbst erkennst, markierst du das
         Feld.
         Hast du 3 Treffer quer, hochkant oder diagonal rufst du "Annabingo". <br/>

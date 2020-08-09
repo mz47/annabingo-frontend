@@ -36,6 +36,10 @@ a:hover {
   margin-left: auto;
 }
 
+.bingosearch {
+  width: 80vw;
+}
+
 .createfield {
   background-color: #242F40;
   color: #f4f4f4;
