@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router-dom";
 import {Header} from "./Header";
 import {Home} from "./Home";
 import {SearchBingo} from "./SearchBingo";
+import {Impressum} from "./Impressum";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/view/:uuid" component={Matrix}/>
                 <Route path="/create" component={CreateMatrix}/>
                 <Route path="/search" component={SearchBingo}/>
+                <Route path="/impressum" component={Impressum}/>
             </Switch>
         </div>
     );
